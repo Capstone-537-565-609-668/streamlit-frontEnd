@@ -1,0 +1,6 @@
+streamlit==1.14.1
+geopandas==0.12.2
+matplotlib==3.3.4
+Pillow==9.2.0
+shapely==2.0.1
+typing_extensions==4.4.0
