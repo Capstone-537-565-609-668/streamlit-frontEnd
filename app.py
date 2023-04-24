@@ -29,6 +29,6 @@ with open('my_file_csv.csv') as f:
     st.download_button('Download CSV', f, mime='text/csv')
 
 # Download the generated polygons as Shapefile
-with open('my_file_shape.shp', 'rb') as f:
-    st.download_button('Download Shapefile', f,
-                       mime='application/octet-stream')
+# with open('my_file_shape.shp', 'rb') as f:
+#     st.download_button('Download Shapefile', f,
+#                        mime='application/octet-stream')

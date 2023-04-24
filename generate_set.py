@@ -2,7 +2,6 @@ import math
 import random
 import matplotlib.pyplot as plt
 from PIL import Image, ImageFont, ImageDraw
-from plot import PLOT
 from download_csv import convert_to_shape_csv
 from shapely.geometry import Polygon
 from utils import clip
@@ -17,14 +16,14 @@ from generate_polygon import generate_polygon
 
 def generate_sets(card, xsize, ysize, vertices_bounds, show_grid=True, irregularity_clip=0.8, spikiness_clip=0.8):
     # card=100
-    gridCols = math.floor(math.sqrt(card))
+    gridCols = math.ceil(math.sqrt(card))
     # 5*5=> 25 cells. Need to distribute card into these cells
-    gridRows = math.floor(math.sqrt(card))
+    gridRows = math.ceil(math.sqrt(card))
     # vertices_bounds=[3,10]
     # xsize=1000
     # ysize=1000
     print(card, gridCols, gridRows, gridCols * gridRows)
-    print("sfwenfwefnweuifhnewj")
+    # print("sfwenfwefnweuifhnewj")
     if card > (gridCols*gridRows):
         print("heeeeeerrrrre")
         card = gridCols*gridRows
