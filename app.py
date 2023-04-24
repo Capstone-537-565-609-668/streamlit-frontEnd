@@ -7,9 +7,9 @@ st.title("Sythetic Spatial Data Generation")
 
 
 # USER INPUTS
-card = st.number_input("Enter the number of polygons", 1, 100000, 1000)
-xsize = st.number_input("Enter the xsize", 1, 100000, 10000)
-ysize = st.number_input("Enter the ysize", 1, 100000, 10000)
+card = st.number_input("Enter the number of polygons", 1, 100000, 36)
+xsize = st.number_input("Enter the xsize", 1, 100000, 500)
+ysize = st.number_input("Enter the ysize", 1, 100000, 500)
 vertices_bounds = st.slider("Enter the range of vertices", 3, 10, (3, 7))
 irregularity_clip = st.slider(
     "Enter the range of irregularity", 0.0, 1.0, (0.0, 0.8))
