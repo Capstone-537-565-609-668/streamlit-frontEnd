@@ -8,6 +8,7 @@
 # Breaking condition : card > (gridCols*gridRows):
 import matplotlib.pyplot as plt
 import time
+from generate_set import generate_sets
 
 
 def PLOT():
